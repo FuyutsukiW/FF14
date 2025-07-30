@@ -1,0 +1,246 @@
+body {
+  font-family: sans-serif;
+  text-align: center;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 20px;
+}
+
+h1 {
+  margin-bottom: 30px;
+}
+
+/* Role Selection */
+#role-select button {
+  font-size: 16px;
+  padding: 10px 20px;
+  margin: 10px;
+  cursor: pointer;
+  border: none;
+  border-radius: 10px;
+  color: white;
+}
+
+#role-select button:nth-child(2) { background-color: #007bff; }  /* Tank = Blue */
+#role-select button:nth-child(3) { background-color: #28a745; }  /* Healer = Green */
+#role-select button:nth-child(4) { background-color: #dc3545; }  /* DPS = Red */
+
+/* Island Map */
+.island-map {
+  position: relative;
+  width: 400px;
+  height: 400px;
+  margin: 0 auto;
+  margin-top: 40px;
+  background-color: #f9f9f9;
+  border: 1px dashed #ccc;
+  border-radius: 20px;
+  overflow: visible;
+
+
+}
+
+/* Island Styling */
+.island {
+  position: absolute; /* Needed to place each island in pentagon shape */
+  width: 100px;
+  height: 100px;
+  background-color: #d4eaff;
+  border: 2px solid #337ab7;
+  border-radius: 50%;
+  font-weight: bold;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+
+/* Specific island positions (upside-down pentagon) */
+#island1 {
+  position: absolute;
+  bottom: 10px;
+  left: 150px;
+}
+
+#island2 {
+  position: absolute;
+  left: 20px;
+  bottom: 120px;
+}
+
+#island3 {
+  position: absolute;
+  left: 70px;
+  top: 20px;
+}
+
+#island4 {
+  position: absolute;
+  right: 70px;
+  top: 20px;
+}
+
+#island5 {
+  position: absolute;
+  right: 20px;
+  bottom: 120px;
+}
+
+.player-icon {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  display: none;
+  margin-top: 10px;
+  background-color: gray; /* default for testing */
+}
+#back-btn {
+  position: absolute;
+  bottom: -60px; /* moves it lower outside island-map box */
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #666;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+#back-btn:hover {
+  background-color: #444;
+}
+
+#question-text {
+  font-weight: bold;
+  font-size: 18px;
+  background-color: #fff;
+  padding: 5px 10px;
+  border-radius: 8px;
+  margin-bottom: 10px;
+  display: inline-block;
+}
+
+
+#tether-line {
+  pointer-events: none;
+}
+
+.feedback {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: white;
+  padding: 20px 30px;
+  border: 2px solid #333;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.25);
+  z-index: 100;
+}
+
+.feedback.hidden {
+  display: none;
+}
+
+.feedback p {
+  margin: 0 0 15px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.feedback button {
+  padding: 8px 16px;
+  background: #337ab7;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+.feedback button:hover {
+  background: #245682;
+}
+#feedback-box {
+  position: fixed;
+  top: 30%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: white;
+  border: 2px solid #333;
+  padding: 20px;
+  border-radius: 10px;
+  z-index: 1000;
+  box-shadow: 0px 4px 12px rgba(0,0,0,0.2);
+}
+
+.hidden {
+  display: none;
+}
+
+#mechanic-indicator {
+  font-size: 18px;
+  font-weight: bold;
+  margin-top: 10px;
+  color: #a94442;
+}
+.spear-icon {
+  font-size: 22px;
+  margin-top: 4px;
+  color: #666;
+}
+
+.boss-sword {
+  position: absolute;
+  top: 140px; /* Adjust this value for vertical alignment */
+  left: 185px; /* Default: center between Island 2 and 5 */
+  font-size: 32px;
+  z-index: 10;
+  transition: transform 0.3s ease;
+}
+
+.boss-sword.left {
+  transform: translateX(-60px) rotate(-20deg);
+}
+
+.boss-sword.right {
+  transform: translateX(60px) rotate(20deg);
+}
+
+.boss-sword.hidden {
+  display: none;
+}
+
+
+.island.zone-mode {
+  display: flex;             /* maintain flex layout */
+  flex-wrap: wrap;           /* allow zones to wrap inside */
+  align-content: flex-start; /* optional for layout inside */
+  justify-content: flex-start;
+  overflow: hidden;
+}
+
+
+.island.zone-mode .zone {
+  width: 50%;
+  height: 50%;
+}
+
+.zone {
+  position: absolute;
+  pointer-events: auto;
+  border: 2px dashed green;
+  background-color: rgba(0,255, 0, 0.2);
+  box-sizing: border-box;
+  z-index: 10;
+}
+
+#island1.zone-mode,
+#island2.zone-mode,
+#island3.zone-mode,
+#island4.zone-mode,
+#island5.zone-mode {
+  position: absolute !important;
+}
