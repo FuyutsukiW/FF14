@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>FF14 M8S Lone Wolf Lament Mechanic Trainer</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1>FF14 M8S Lone Wolf Lament Mechanic Trainer</h1>
+  <p id="question-text" style="font-weight: bold; font-size: 18px; margin-bottom: 20px;"></p>
+  <div id="mechanic-indicator"></div>
+
+
+  <!-- Role Selection Screen -->
+  <div id="role-select">
+    <p>Select Your Role:</p>
+    <button onclick="selectRole('Tank')">🛡 Tank</button>
+    <button onclick="selectRole('Healer')">✚ Healer</button>
+    <button onclick="selectRole('DPS')">⚔ DPS</button>
+
+
+    <p style="margin-top: 20px; font-size: 14px; color: #555;">
+      Created by Fuyu – Based on strategies from Game8 (Japanese) and Alice
+      Version 1.0.0 – Last Updated: 2023-10-09
+    </p>
+
+  </div>
+
+  <!-- Island Map -->
+  <div class="island-map" id="island-map" style="display: none;">
+   
+    <!-- Sword will appear in the center leaning left/right -->
+    <div id="boss-sword" class="boss-sword hidden">⚔️</div>
+
+
+    <div class="island" id="island1">
+      Island 1 <div class="player-icon" id="player-on-1"></div>
+    </div>
+    <div class="island" id="island2">
+      Island 2 <div class="player-icon" id="player-on-2"></div>
+    </div>
+    <div class="island" id="island3">
+      Island 3 <div class="player-icon" id="player-on-3"></div>
+    </div>
+    <div class="island" id="island4">
+      Island 4 <div class="player-icon" id="player-on-4"></div>
+    </div>
+    <div class="island" id="island5">
+      Island 5 <div class="player-icon" id="player-on-5"></div>
+    </div>
+    <button id="back-btn" onclick="goBackToRoleSelect()">🔙 Back to Role Selection</button>
+    <svg id="tether-line" width="100%" height="100%" style="position: absolute; top: 0; left: 0; z-index: 1;">
+      <line id="tether-svg-line" x1="0" y1="0" x2="0" y2="0" stroke="green" stroke-width="4" />
+    </svg>
+    <div id="feedback-box" class="feedback hidden">
+      <p id="feedback-text"></p>
+      <button id="feedback-ok">OK</button>
+
+    </div>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
