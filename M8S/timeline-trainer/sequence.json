@@ -1,0 +1,94 @@
+[
+  {
+    "id": 1,
+    "text": "Quake III - Light Party Stack, MT Group move to left platform, ST Group move to Right Platform",
+    "correctPrompt": "Quake III - dont forget to mitigate",
+    "image": "images/step1.jpg"
+  },
+  {
+    "id": 2,
+    "text": "Ultraviolent Ray - Conga or V line position, MT group on left platform, ST group on right platform ",
+    "correctPrompt": "Ultraviolent Ray - based on priority either go up, stay or go to C platform dont forget avoid laser R/L from behind ",
+    "image": "images/step2.jpg"
+  },
+  {
+    "id": 3,
+    "text": "Twinbite - Tank Buster, MT and ST on Left and Right platform, everyone else on C Platform",
+    "correctPrompt": "Twinbite - 600k Tank Buster magic damage so dont use rampart.",
+    "image": "images/step3.jpg"
+  },
+  {
+    "id": 4,
+    "text": "Hero's Blow - Regroup at Platform C and avoid AOE by going to one safe random corner",
+    "correctPrompt": "Hero's Blow - avoid 4 combination AOE from In/Out & Right/Left cleave",
+    "image": "images/step4.jpg"
+  },
+  {
+    "id": 5,
+    "text": "2nd Ultraviolent Ray - Conga or V line position, MT group on left platform, ST group on right platform ",
+    "correctPrompt": "2nd Ultraviolent Ray - based on priority either go up, stay or go to C platform dont forget avoid laser R/L from behind ",
+    "image": "images/step2.jpg"
+  },
+  {
+    "id": 6,
+    "text": "2nd Quake III - Light Party Stack, MT Group move to left platform, ST Group move to Right Platform",
+    "correctPrompt": "2nd Quake III - dont forget to mitigate",
+    "image": "images/step1.jpg"
+  },
+  {
+    "id": 7,
+    "text": "Mooncleaver, Regroup and Bait Mooncleaver at C platform, then MT and ST go to their platform, others go north of tank that have debuff  ",
+    "correctPrompt": "Mooncleaver & Elemental Purge - Co Tank must provoke to avoid one tank got both debuff scenario",
+    "image": "images/step7.jpg"
+  },
+  {
+    "id": 8,
+    "text": "Prowling Gale - Spread for Tower position, Healer go to their tank, D1 with D3, D2 with D4 ",
+    "correctPrompt": "Prowling Gale - Soak tower and HURRY BACK to LP stack position",
+    "image": "images/step8.jpg"
+  },
+  {
+    "id": 9,
+    "text": "Twofold Tempest - Pass tether to Tank, Healer stay, DPS go back to Tower position and resolve twofold tempest",
+    "correctPrompt": "Twofold Tempest - Tethered couple to place AOE that doesnt block teleporter, other get ready to bait Line Aoe ",
+    "image": "images/step9.jpg"
+  },
+  {
+    "id": 10,
+    "text": "Champion Circuit - Regroup at C platform and avoid AOE 5 times",
+    "correctPrompt": "Champion Circuit - 5 pattern AOE clockwise or Counter clockwise",
+    "image": "images/step10.jpg"
+  },
+  {
+    "id": 11,
+    "text": "3rd Quake III - Light Party Stack, MT Group move to left platform, ST Group move to Right Platform",
+    "correctPrompt": "3rd Quake III - dont forget to mitigate",
+    "image": "images/step1.jpg"
+  },
+  {
+    "id": 12,
+    "text": "3rd Ultraviolent Ray - Conga or V line position, MT group on left platform, ST group on right platform ",
+    "correctPrompt": "Ultraviolent Ray - based on priority either go up, stay or go to C platform dont forget avoid laser R/L from behind ",
+    "image": "images/step2.jpg"
+  },
+  {
+    "id": 13,
+    "text": "2nd Twinbite - Tank Buster, MT and ST on Left and Right platform, everyone else on C Platform",
+    "correctPrompt": "2nd Twinbite - 600k magic damage so dont use rampart.",
+    "image": "images/step3.jpg"
+  },
+  {
+    "id": 14,
+    "text": "Lone Wolf Lament - Healers at C platform, Tanks at Upper Left platform, and DPS at Lower Right platform",
+    "correctPrompt": "Lone Wolf Lament + Hero's Blow + Chaotic conga - move or stay accordingly to tether and resolve tower mechanic and Immediately sprint go to safe side (East or West and in or out) the spread blue marker and avoid laser",
+    "image": "images/step14.jpg"
+  },
+  {
+    "id": 15,
+     "text": "Regroup at Platform C for Howling Eight (81128)",
+      "correctPrompt": "Howling Eight - Make sure tower spawn first before teleporting away",
+    "image": "images/step15.jpg"
+
+  }
+  
+]
