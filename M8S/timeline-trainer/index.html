@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>FF14 M8S Phase2 Timeline Trainer - </title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div id="start-screen" class="screen active">
+    <h1>FF14 M8S Phase2 Timeline Trainer</h1>
+    <button id="start-button">Start</button>
+    <p class="meta-info">
+      Created by Fuyu — Based on strategies from Game8 (Japanese)<br />
+      Last update: 4 August 2025
+    </p>
+  </div>
+
+  <!-- rest of the content below -->
+
+
+  <div id="quiz-screen" class="screen">
+    <h2>Select the correct next step</h2>
+    <button id="back-button">Back to Start</button>
+    <p id="previous-answer" class="previous-answer"></p>
+
+    <div id="options-container"></div>
+  </div>
+
+  <!-- Modal for correct answer -->
+  <div id="correct-modal" class="modal">
+    <div class="modal-content">
+      <p id="correct-text"></p>
+      <img id="correct-image" src="" alt="Step Image">
+      <button id="modal-ok-button">OK</button>
+    </div>
+  </div>
+
+  <!-- Modal for incorrect answer -->
+  <div id="incorrect-modal" class="modal">
+    <div class="modal-content">
+      <p id="incorrect-text"></p>
+      <button id="incorrect-ok-button">OK</button>
+    </div>
+  </div>
+
+
+  
+  <script src="script.js"></script>
+</body>
+</html>
